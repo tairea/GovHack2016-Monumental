@@ -1,0 +1,51 @@
+#map {
+    width: 100%;
+    height: 82vh;
+    margin: 0;
+}
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  height: 100%;
+/*  width: auto; */
+/*  height: auto;*/
+  z-index: -1;
+  -webkit-filter:brightness(0.55);
+  -moz-filter:brightness(0.55);
+  filter: url(#brightness);
+  filter:brightness(0.55);
+}
+
+
+#mapcontain {
+    height: 100vh;
+    transition: opacitiy 2s;
+}
+
+header {
+    transition: opacitiy 2s;
+
+}
+
+
+#about {
+    transition: opacitiy 2s;
+}
+
+#contribute {
+    transition: opacitiy 2s;
+}
+
+
+input {
+	border: 1px solid #ccc;
+	padding: 5px;
+	width: 50%;
+    height: 70px;
+	margin: 0;
+	border-radius: 5px;
+}
