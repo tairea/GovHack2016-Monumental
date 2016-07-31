@@ -54,7 +54,7 @@ button1.onclick=function(){
     document.getElementById("header").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("mapcontain").style.display = "block";
-    //init();
+    init();
     document.getElementById("contribute").style.display = "none";
 };
 
@@ -62,7 +62,7 @@ button2.onclick=function(){
     document.getElementById("header").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("mapcontain").style.display = "block";
-    //init();
+    init();
     document.getElementById("contribute").style.display = "none";
 };
 
@@ -143,7 +143,7 @@ button2.onclick=function(){
     END MAP
 ==========================*/
 
-$(document).ready(function(){
+function init(){
 
 
     navigator.geolocation.getCurrentPosition(show_map,geo_error);
@@ -230,5 +230,4 @@ $(document).ready(function(){
 
 
     }
-});
-
+}
